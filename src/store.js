@@ -10,7 +10,11 @@ const store= createStore(
         products: productsReducer,
     }),
     initialState,
-    composeEnhancer(applyMiddleware(thunk))
+    
+    compose(
+        applyMiddleware(thunk),
+        window.devToolsExtension ? window.devToolsExtension() : f => f
+    )
 );
 
 export default store;
