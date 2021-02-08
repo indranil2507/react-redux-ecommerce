@@ -9,10 +9,10 @@ import { Provider } from "react-redux";
 
 class App extends React.Component{
   
-  constructor(){
+ /* constructor(){
     super();
     this.state={
-      /*products: data.products,*/
+      products: data.products,
       cartItems: localStorage.getItem("cartItems")?JSON.parse(localStorage.getItem("cartItems")):[],
       size:"",
       sort:"",
@@ -45,7 +45,7 @@ class App extends React.Component{
     }
     this.setState({cartItems})
     localStorage.setItem("cartItems",JSON.stringify(this.state.cartItems))
-  }
+  }*/
   /*sortProducts = (event)=>{
     const sort = event.target.value
     console.log(event.target.value);
@@ -91,12 +91,13 @@ class App extends React.Component{
                filterProducts={this.filterProducts}
                sortProducts={this.sortProducts}*/>
              </Filter>
-             <Products /* products={this.state.products}*/ addToCart={this.addToCart}></Products>
+             <Products /* products={this.state.products} addToCart={this.addToCart}*/></Products>
            </div>
            <div className="sidebar">
-            <Cart cartItems={this.state.cartItems} 
+            <Cart 
+            /*cartItems={this.state.cartItems} 
             removeFromCart={this.removeFromCart}
-            createOrder={this.createOrder}/>
+            createOrder={this.createOrder}*//>
            </div>
          </div>
         </main>
