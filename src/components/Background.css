@@ -1,0 +1,13 @@
+.icon-row{
+
+   margin: 5px;
+}
+.icon{
+   color:rgba(196, 240, 229, 0.61);
+   transition: 0.3s all;
+   padding: 2px;
+}
+.icon:hover{
+    color:#78c0e0
+}
+

@@ -1,0 +1,41 @@
+.main-section{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    height: 62vh;
+
+}
+.background{
+    flex: 1;
+   
+    
+  
+}
+.background:first-child{
+    border-right: rgba(196, 240, 229, 0.61) solid 0.2rem;
+}
+.background:last-child{
+    border-left: rgba(196, 240, 229, 0.61) solid 0.2rem;
+}
+.carousel{
+    flex: 4;
+}
+@media (max-height:768px){
+    .background{
+        display: none;    
+      
+    }
+}
+.cards{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    height: 38vh;
+
+}
+.card{
+    flex: 1;
+    padding: 20px;
+    justify-content: center;
+    text-align: center;
+}
