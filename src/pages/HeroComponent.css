@@ -20,7 +20,7 @@
 .carousel{
     flex: 4;
 }
-@media (max-height:768px){
+@media (max-width:768px){
     .background{
         display: none;    
       
